@@ -1,28 +1,24 @@
 
-
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-<?php get_header(); ?>
   <div class="carousel-inner">
+  <?php get_header(); ?>
+
         <div class="carouseltext">
             <!-- <form>
                 <label>Sign up</label><br>
                 <input type="name" placeholder="Name">
                 <input type="email" placeholder="Email">
             </form> -->
-            <form>
+            <form class="signupform">
                 <label>Sign up</label>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder= "Name">
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">                 
-                        </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" placeholder= "Email">
                     </div>
-                </div>
+               </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
@@ -49,6 +45,9 @@
   </a>
 </div>
 <h1>hello</h1>
+<div class="formdisplayer">
+    <p>sign up form for mobile view</p>
+</div>
 
 <div class="firstdiv">
 </div>
