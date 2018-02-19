@@ -11,17 +11,78 @@ Text Domain: twentyseventeen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+.carousel-fade .carousel-item {
+    display: block;
+    position: relative;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+  }
+  
+  .row {
+          width: 100%;
+  }
+  
+  .carousel-fade .carousel-item.active {
+    opacity: 1;
+    display: block;
+  }
+  .row {
+    width: 100%;
+  }
+  .carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-item {
+    opacity: 0.5;
+  }
+  /* .carousel-item p {
+    position: absolute;
+        bottom: 20%;
+        z-index: 20;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        left: 40%;
+        margin-left: -100px;
+  } */
+  a.carousel-control-next:link, a.carousel-control-prev:link {
+    background-color: transparent;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+  a.carousel-control-next:hover, a.carousel-control-prev:hover  {
+    background-color: transparent;
+    text-decoration: none;
+    opacity: 1;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    position:relative;
+    background-image: none;
+  }    
+  .carousel-control-next-icon:before {
+    top:0;
+    left:-5px;
+    padding-right:10px;
+   }
+  .carousel-control-prev-icon:before {
+    top:0;
+    left:-5px;
+    padding-right:10px;
+  }
+  .sidebar {
+    background-color: #e1e1e1;
+  }
 
 
 @media only screen and (max-width: 768px) {
-body {
-    background: green;
-}
 
     .carouseltext {
         position: absolute;
-        bottom: 10%;
+        bottom: 5%;
         z-index: 20;
         color: white;
         text-shadow: 0 1px 2px rgba(0,0,0,.6);
@@ -38,9 +99,7 @@ body {
         text-align: center;
     }
 
-    .carouseltext form button {
-            border-radius: 15px;
-    }
+ 
 
     .navbar div {
         align-content: center;
@@ -54,21 +113,27 @@ body {
         margin-bottom: 0px;
         background: white;
         line-height: 15px;
+        opacity: 0.5;
     }
     .signupform {
         display: none;
     }
+    
     .formdisplayer {
         display: block;
+    }
+    .navbar {
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
 /* ***********Desktop View Begins *************** */
 @media only screen and (min-width: 768px) {
     body {
-        margin:0px;
+        margin: 0px;
         border: 0px;
-        background: black;
+        padding: 0px;
     }
     .formdisplayer {
         display: none;
@@ -95,12 +160,12 @@ body {
     }
 
     .carousel-item img {
-        height: 80vh;
+        height: 95vh;
     }
 
     .carouseltext {
         position: absolute;
-        bottom: 10%;
+        bottom: 5%;
         z-index: 20;
         color: white;
         text-shadow: 0 1px 2px rgba(0,0,0,.6);
@@ -117,22 +182,131 @@ body {
         text-align: center;
         }
 
-        .carouseltext form button {
-            border-radius: 15px;
-        }
+      
 
         .loginnav {
             margin-left: 50px;
         }
 
         .navbar {
-            background: transparent;
+            background-color: transparent;
             transition: 1s all;
         }
 
         .changeColor {
             background: white;
         }
-    }
+        .menu-item:nth-child(1) {
+            color: #D1AC41;
+        }
+        .menu-item:nth-child(2) {
+            
+            color: #D1AC41;
+        }
+        .menu-item:nth-child(3) {
+ 
+            color: #D1AC41;
+        }
+        .footerdiv {
+            display: flex;
+            justify-content: center;
+        }
+        .footerdiv input {
+            padding: 5px;
+            margin: 0px 10px 0px 5px;
+            text-align: center;
+        }
+        .footermaindiv {
+            display: flex;
+            margin-left: 5%;
+        }
+        .footermaindiv div ul li {
+            list-style-type: none;
+        }
+
+        .footermaindiv div ul li:first-child {
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+
+        .firstnavul {
+            margin-left: 250px;
+            border-radius: 15px;
+        }
+
+        .firstnavul li a {
+            color: #DCAE1D;
+        }
+        .navsecondstuff {
+            margin-left: 180px;
+        }
+        .navsecondstuff li a {
+            color: #00303F;
+        }
+        .navthirdstuff li a {
+            color: #00303F;
+        }
+        .copyrightdiv {
+            background: black;
+            text-align: center;
+            bottom: 0px;
+            color: white;
+            height: 100%;
+        }
+        .navbar-brand {
+            color: #DCAE1D !important;
+        }
+        .signupform button {
+            background: #DCAE1D;
+         }
+         .signupform button:hover {
+             background: white;
+         }
+         /* @keyframes textmoveanimation {
+            from {margin-left: 0px;}
+            to {margin-left: 100px;}
+        }
+        .animatedcarouseltext {
+            animation-name: textmoveanimation;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        } */
+        .carousel-caption p:nth-child(1) {
+            animation-delay: 1s;
+            color: red;
+            margin-bottom: 30%;
+        }
+        .carousel-caption p:nth-child(2) {
+            animation-delay: 1s;
+        }
+        .carousel-caption p:nth-child(3) {
+            animation-delay: 1s;
+        }
+        .footersignupform {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .footersignupform div input {
+            text-align: center;
+        }
+        .footersignupform div button {
+            background: #DCAE1D;
+        }
+        .contactpagediv {
+            margin: 50px auto;
+            text-align: center;
+        }
+        .wpcf7-form-control-wrap input {
+            text-align: center;
+        }
+}
+
+
+
+
+        
+
 
 /* ***********Desktop View Ends *************** */
