@@ -3,6 +3,7 @@
     require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
     // Dynamically adding bootstrap files to wordpress
     function addingStyleSheet() {
+        wp_enqueue_style('resetcss', get_template_directory_uri() . '/css/reset.css');
         wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css');
         wp_enqueue_style('style', get_stylesheet_uri());
         wp_enqueue_style('animatecss', get_template_directory_uri() . '/css/animate.css');

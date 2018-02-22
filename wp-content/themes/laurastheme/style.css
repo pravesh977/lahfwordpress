@@ -12,35 +12,35 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 .carousel-fade .carousel-item {
-    display: block;
-    position: relative;
-    opacity: 0;
-    transition: opacity .75s ease-in-out;
-  }
-  
-  .row {
-          width: 100%;
-  }
-  
-  .carousel-fade .carousel-item.active {
-    opacity: 1;
-    display: block;
-  }
-  .row {
-    width: 100%;
-  }
-  .carousel {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .carousel-inner {
-    height: 100%;
-  }
-  .carousel-item {
-    opacity: 0.5;
-  }
-  /* .carousel-item p {
+  display: block;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.row {
+  width: 100%;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+  display: block;
+}
+.row {
+  width: 100%;
+}
+.carousel {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  opacity: 0.5;
+}
+/* .carousel-item p {
     position: absolute;
         bottom: 20%;
         z-index: 20;
@@ -49,220 +49,221 @@ Use it to make something cool, have fun, and share what you've learned with othe
         left: 40%;
         margin-left: -100px;
   } */
-  a.carousel-control-next:link, a.carousel-control-prev:link {
-    background-color: transparent;
-    text-decoration: none;
-    opacity: 0.5;
-  }
-  a.carousel-control-next:hover, a.carousel-control-prev:hover  {
-    background-color: transparent;
-    text-decoration: none;
-    opacity: 1;
-  }
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    position:relative;
-    background-image: none;
-  }    
-  .carousel-control-next-icon:before {
-    top:0;
-    left:-5px;
-    padding-right:10px;
-   }
-  .carousel-control-prev-icon:before {
-    top:0;
-    left:-5px;
-    padding-right:10px;
-  }
-  .sidebar {
-    background-color: #e1e1e1;
-  }
-
+a.carousel-control-next:link,
+a.carousel-control-prev:link {
+  background-color: transparent;
+  text-decoration: none;
+  opacity: 0.5;
+}
+a.carousel-control-next:hover,
+a.carousel-control-prev:hover {
+  background-color: transparent;
+  text-decoration: none;
+  opacity: 1;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: relative;
+  background-image: none;
+}
+.carousel-control-next-icon:before {
+  top: 0;
+  left: -5px;
+  padding-right: 10px;
+}
+.carousel-control-prev-icon:before {
+  top: 0;
+  left: -5px;
+  padding-right: 10px;
+}
+.sidebar {
+  background-color: #e1e1e1;
+}
 
 @media only screen and (max-width: 768px) {
+  .carouseltext {
+    position: absolute;
+    bottom: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    left: 40%;
+    margin-left: -100px;
+  }
 
-    .carouseltext {
-        position: absolute;
-        bottom: 5%;
-        z-index: 20;
-        color: white;
-        text-shadow: 0 1px 2px rgba(0,0,0,.6);
-        left: 40%;
-        margin-left: -100px;
-    }
+  .carouseltext form {
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    .carouseltext form {
-        text-align: center;
-        margin: 0 auto;
-    }
+  .carouseltext form input {
+    text-align: center;
+  }
 
-    .carouseltext form input {
-        text-align: center;
-    }
+  .navbar div {
+    align-content: center;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
 
- 
+  .navbar div a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: white;
+    line-height: 15px;
+    opacity: 0.5;
+  }
+  .signupform {
+    display: none;
+  }
 
-    .navbar div {
-        align-content: center;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;  
-    }
-
-    .navbar div a {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        background: white;
-        line-height: 15px;
-        opacity: 0.5;
-    }
-    .signupform {
-        display: none;
-    }
-    
-    .formdisplayer {
-        display: block;
-    }
-    .navbar {
-        width: 50%;
-        margin: 0 auto;
-    }
+  .formdisplayer {
+    display: block;
+  }
+  .navbar {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 /* ***********Desktop View Begins *************** */
 @media only screen and (min-width: 768px) {
-    body {
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
-    .formdisplayer {
-        display: none;
-    }
-    .firstdiv {
-        background-color: yellow;
-        height: 50vh;
-        width: 100%;
-    }
+  body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+  }
+  .formdisplayer {
+    display: none;
+  }
+  .firstdiv {
+    background-color: yellow;
+    height: 50vh;
+    width: 100%;
+  }
 
-    .menu-item {
-        padding: 5px;
-    }
+  .menu-item {
+    padding: 5px;
+  }
 
-    .navbar-right li a {
-        color: black;
-    }
-    .starthere {
-        background: brown;
-        color: white;
-        text-align: center;
-        margin: 0 auto;
-        border-radius: 50px;
-    }
+  .navbar-right li a {
+    color: black;
+  }
+  .starthere {
+    background: brown;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
 
-    .carousel-item img {
-        height: 95vh;
-    }
+  .carousel-item img {
+    height: 95vh;
+  }
 
-    .carouseltext {
-        position: absolute;
-        bottom: 5%;
-        z-index: 20;
-        color: white;
-        text-shadow: 0 1px 2px rgba(0,0,0,.6);
-        left: 40%;
-        margin-left: -120px;
-    }
+  .carouseltext {
+    position: absolute;
+    bottom: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    left: 40%;
+    margin-left: -120px;
+  }
 
-    .carouseltext form {
-        text-align: center;
-        margin: 0 auto;
-    }
+  .carouseltext form {
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    .carouseltext form input {
-        text-align: center;
-        }
+  .carouseltext form input {
+    text-align: center;
+  }
 
-      
+  .loginnav {
+    margin-left: 50px;
+  }
 
-        .loginnav {
-            margin-left: 50px;
-        }
+  .navbar {
+    background-color: transparent;
+    transition: 1s all;
+  }
 
-        .navbar {
-            background-color: transparent;
-            transition: 1s all;
-        }
+  .changeColor {
+    background: white;
+  }
+  .menu-item:nth-child(1) {
+    color: #d1ac41;
+  }
+  .menu-item:nth-child(2) {
+    color: #d1ac41;
+  }
+  .menu-item:nth-child(3) {
+    color: #d1ac41;
+  }
+  footer {
+    height: 100%;
+    padding: 0px;
+  }
+  .footermaindiv {
+    display: flex;
+    margin-left: 5%;
+  }
+  .footermaindiv div ul li {
+    list-style-type: none;
+  }
 
-        .changeColor {
-            background: white;
-        }
-        .menu-item:nth-child(1) {
-            color: #D1AC41;
-        }
-        .menu-item:nth-child(2) {
-            
-            color: #D1AC41;
-        }
-        .menu-item:nth-child(3) {
- 
-            color: #D1AC41;
-        }
-        .footerdiv {
-            display: flex;
-            justify-content: center;
-        }
-        .footerdiv input {
-            padding: 5px;
-            margin: 0px 10px 0px 5px;
-            text-align: center;
-        }
-        .footermaindiv {
-            display: flex;
-            margin-left: 5%;
-        }
-        .footermaindiv div ul li {
-            list-style-type: none;
-        }
+  .footermaindiv div ul li:first-child {
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
 
-        .footermaindiv div ul li:first-child {
-            font-weight: bolder;
-            margin-bottom: 5px;
-        }
+  .firstnavul {
+    margin-left: 250px;
+    border-radius: 15px;
+  }
 
-        .firstnavul {
-            margin-left: 250px;
-            border-radius: 15px;
-        }
-
-        .firstnavul li a {
-            color: #DCAE1D;
-        }
-        .navsecondstuff {
-            margin-left: 180px;
-        }
-        .navsecondstuff li a {
-            color: #00303F;
-        }
-        .navthirdstuff li a {
-            color: #00303F;
-        }
-        .copyrightdiv {
-            background: black;
-            text-align: center;
-            bottom: 0px;
-            color: white;
-            height: 100%;
-        }
-        .navbar-brand {
-            color: #DCAE1D !important;
-        }
-        .signupform button {
-            background: #DCAE1D;
-         }
-         .signupform button:hover {
-             background: white;
-         }
-         /* @keyframes textmoveanimation {
+  .firstnavul li a {
+    color: #dcae1d;
+  }
+  .navsecondstuff {
+    margin-left: 180px;
+  }
+  .navsecondstuff li a {
+    color: #00303f;
+  }
+  .navthirdstuff li a {
+    color: #00303f;
+  }
+  .copyrightdiv {
+    background: black;
+    text-align: center;
+    bottom: 0px;
+    color: white;
+    height: 100%;
+  }
+  .navbar-brand {
+    color: #dcae1d !important;
+  }
+  .signupform {
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+    left: 40%;
+    margin-left: -100px;
+  }
+  .signupform div div input {
+    text-align: center;
+  }
+  .signupform button {
+    background: #dcae1d;
+    color: white;
+  }
+  .signupform button:hover {
+    background: white;
+  }
+  /* @keyframes textmoveanimation {
             from {margin-left: 0px;}
             to {margin-left: 100px;}
         }
@@ -272,41 +273,72 @@ Use it to make something cool, have fun, and share what you've learned with othe
             animation-delay: 2s;
             animation-iteration-count: infinite;
         } */
-        .carousel-caption p:nth-child(1) {
-            animation-delay: 1s;
-            color: red;
-            margin-bottom: 30%;
-        }
-        .carousel-caption p:nth-child(2) {
-            animation-delay: 1s;
-        }
-        .carousel-caption p:nth-child(3) {
-            animation-delay: 1s;
-        }
-        .footersignupform {
-            text-align: center;
-            width: 50%;
-            margin: 0 auto;
-        }
-        .footersignupform div input {
-            text-align: center;
-        }
-        .footersignupform div button {
-            background: #DCAE1D;
-        }
-        .contactpagediv {
-            margin: 50px auto;
-            text-align: center;
-        }
-        .wpcf7-form-control-wrap input {
-            text-align: center;
-        }
+  .carousel-caption p:nth-child(1) {
+    animation-delay: 1s;
+    color: red;
+    margin-bottom: 30%;
+  }
+  .carousel-caption p:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .carousel-caption p:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .footersignupform {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .footersignupform div input {
+    text-align: center;
+  }
+  .footersignupform div button {
+    background: #dcae1d;
+    color: white;
+  }
+  .contactpagediv {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .wpcf7-form-control-wrap input {
+    text-align: center;
+  }
+  .aboutimagetext {
+    position: absolute;
+    color: black;
+    top: 10%;
+    margin-left: 8%;
+    width: 30%;
+    color: #00303f;
+  }
+  .aboutimagetext p:nth-child(1) {
+      margin-bottom: 8%;
+      font-size: 30px;
+  }
+  .aboutimagetext p:nth-child(1) span {
+      font-weight: bolder;
+  }
+  .aboutimagetext a {
+      background: #dcae1d;
+      color: white;
+      padding: 7px;
+  }
+  .aboutimagetext a:hover {
+      background: #00303f;
+      text-decoration: none;
+  }
+  .indexaboutdiv {
+      position: relative;
+  }
+  .crellyslider{
+    height: 90vh !important;
+  }
+  .freevideosp {
+    text-align: center;
+  }
+  .freevideosdiv {
+    margin-top: 20px;
+  }
 }
-
-
-
-
-        
-
 
 /* ***********Desktop View Ends *************** */

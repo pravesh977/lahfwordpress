@@ -38,7 +38,6 @@
         <p>Copyright @2018</p>
     </div>
 </footer>
-<!-- this makes the wordpress header appear -->
     <script src="<?php bloginfo('template_directory');?>/js/jquery-3.2.1.min.js"></script>
     <script src="<?php bloginfo('template_directory');?>/js/bootstrap.js"></script>
     <script src="<?php bloginfo('template_directory');?>/js/mycustom.js"></script>
